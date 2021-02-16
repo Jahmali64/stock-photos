@@ -61,11 +61,8 @@ header nav{
 
 .nav-links{
     display: none;
+    transition: all 0.5s ease-out;
     padding-top: 5rem;
-}
-
-ul.nav-links{
-    transition: all 0.5s ease 0s;
 }
 
 .nav-links li{
@@ -81,6 +78,7 @@ ul.nav-links{
 
 .show-nav-links{
     display: block;
+    transition: all 0.5s ease-in;
 }
 
 /* Section Styles */
