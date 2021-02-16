@@ -61,7 +61,6 @@ header nav{
 
 .nav-links{
     display: none;
-    transition: all 0.5s ease-out;
     padding-top: 5rem;
 }
 
@@ -76,9 +75,12 @@ header nav{
     text-decoration: none;
 }
 
+.nav-links li a:hover, .nav-links li a:active{
+    text-decoration: underline;
+}
+
 .show-nav-links{
     display: block;
-    transition: all 0.5s ease-in;
 }
 
 /* Section Styles */
@@ -90,12 +92,12 @@ section, section.inspired-rewarded-social{
 /* Styles for main first section with search bar */
 
 .find-or-send-photos{
-    background-image: url(/img/waterfall-3723422_1920.jpg);
+    background-image: url(/img/waterfall-3723422_960.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    padding-top: 10vh;
-    height: 60vh;
+    padding-top: 20vh;
+    height: 75vh;
     color: white;
     text-transform: uppercase;
 }
@@ -114,6 +116,11 @@ section, section.inspired-rewarded-social{
 
 .find-or-send-photos p:last-child a{
     color: white;
+    text-decoration: none;
+}
+
+.find-or-send-photos p:last-child a:hover, .find-or-send-photos p:last-child a:active{
+    text-decoration: underline;
 }
 
 .find-or-send-photos p:first-child{
@@ -446,6 +453,12 @@ footer p{
         padding: 0;
     }
 
+    /* Styles for find or send photos section */
+
+    .find-or-send-photos{
+        background-image: url(/img/waterfall-3723422_1920.jpg);
+    }
+
     /* Styles for search bar */
     #search-form input{
         max-width: 820px;
@@ -498,12 +511,6 @@ footer p{
 }
 
 @media(min-width: 1920px){
-
-    /* Styles for find or send photos section */
-
-    .find-or-send-photos{
-        background-image: url(/img/waterfall-3723422_1920.jpg);
-    }
 
     /* Styles for browse by keywords section */
 
